@@ -30,11 +30,12 @@ function App() {
         changemode={changeMode}
       /> */}
       <Navbar title="Text App" item="Home" mode={mode} changemode={changeMode} />
-      <Routes>
-          <Route path="/about" element={<About />} ></Route>
-          <Route path="/" element={<Textform heading="Enter text below" mode={mode} />}></Route>
-      </Routes>
-      <Footer/>
+      <Textform heading="Enter text below" mode={mode} />
+      {/* <Routes> */}
+          {/* <Route path="/about" element={<About />} ></Route> */}
+          {/* <Route path="/" element={<Textform heading="Enter text below" mode={mode} />}></Route> */}
+      {/* </Routes>
+      <Footer/> */}
 
     </>
   );
